@@ -9,8 +9,10 @@ TagManager:
   - toothBrush
   - mouth
   - Pickable
-  - BrazoIzq
-  - BrazoDer
+  - BrazoIzqCube
+  - BrazoDerCube
+  - manoIz
+  - manoDer
   layers:
   - Default
   - TransparentFX

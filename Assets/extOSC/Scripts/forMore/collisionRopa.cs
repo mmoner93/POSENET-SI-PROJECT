@@ -15,4 +15,45 @@ public class collisionRopa : MonoBehaviour
     {
         
     }
+
+
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("manoIz") && CompareTag("BrazoIzqCube"))
+        {
+
+            controlRopa.instance.setManoIzqPosition(true);
+            Debug.Log("mano izquierda true" );
+
+        }
+
+        if (other.gameObject.CompareTag("manoDer") && CompareTag("BrazoDerCube"))
+        {
+            controlRopa.instance.setManoDerPosition(true);
+            Debug.Log("mano derecha true");
+        }
+
+        //Debug.Log("Estoy fuera con tag " + other.gameObject.tag);
+
+
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("BrazoIzq") && CompareTag("BrazoIzqCube"))
+        {
+            controlRopa.instance.setManoIzqPosition(false);
+            Debug.Log("mano izquierda false");
+        }
+        if (other.gameObject.CompareTag("manoDer") && CompareTag("BrazoDerCube"))
+        {
+            controlRopa.instance.setManoDerPosition(false);
+            Debug.Log("mano derecha false");
+
+        }
+
+    }
+
 }
