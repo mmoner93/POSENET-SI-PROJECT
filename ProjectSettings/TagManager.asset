@@ -8,6 +8,9 @@ TagManager:
   - Basura
   - toothBrush
   - mouth
+  - Pickable
+  - BrazoIzq
+  - BrazoDer
   layers:
   - Default
   - TransparentFX
