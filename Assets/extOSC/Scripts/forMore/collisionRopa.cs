@@ -47,7 +47,7 @@ public class collisionRopa : MonoBehaviour
        // Debug.Log("Soy el object out " + other.gameObject.tag.ToString());
        // Debug.Log("Soy con el que he col out " + tag.ToString());
 
-        if (other.gameObject.CompareTag("BrazoIzq") && CompareTag("BrazoIzqCube"))
+        if (other.gameObject.CompareTag("manoIz") && CompareTag("BrazoIzqCube"))
         {
             controlRopa.instance.setManoIzqPosition(false);
            // Debug.Log("mano izquierda false");
