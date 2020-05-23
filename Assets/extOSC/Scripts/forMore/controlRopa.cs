@@ -6,9 +6,12 @@ public class controlRopa : MonoBehaviour
 {
     public static controlRopa instance;
     private int counter = 0;
-    public GameObject manoIz;
-    public GameObject manoDer;
-
+    public GameObject manoIzCube;
+    public GameObject manoDerCube;
+    public GameObject CajaVisual;
+    public Material mat1;
+    public Material mat2;
+    public Material mat3;
     private bool manoIzqInPosition;
     private bool manoDerInPosition;
 
@@ -26,39 +29,41 @@ public class controlRopa : MonoBehaviour
         instance = this;
         manoIzqInPosition = false;
         manoDerInPosition = false;
-
+        crearSitio();
+        counter = 0;
     }
+    
 
 
     void crearSitio()
     {
         //1
-        pos1manoIzqJUEGO.x = -84.0f;
-        pos1manoIzqJUEGO.y = 0.0f;
+        pos1manoIzqJUEGO.x = 174f;
+        pos1manoIzqJUEGO.y = -0.0f;
         pos1manoIzqJUEGO.z = 1.836f;
-        pos1manoDerJUEGO.x = -465.0f;
+        pos1manoDerJUEGO.x = -185f;
         pos1manoDerJUEGO.y = 0.0f;
         pos1manoDerJUEGO.z = 1.836f;
 
 
         //2
 
-        pos2manoIzqJUEGO.x = -20.0f;
-        pos2manoIzqJUEGO.y = 0.0f;
+        pos2manoIzqJUEGO.x = 174f;
+        pos2manoIzqJUEGO.y = -60.0f;
         pos2manoIzqJUEGO.z = 1.836f;
-        pos2manoDerJUEGO.x = -435.0f;
-        pos2manoDerJUEGO.y = 0.0f;
+        pos2manoDerJUEGO.x = -185f;
+        pos2manoDerJUEGO.y = -60.0f;
         pos2manoDerJUEGO.z = 1.836f;
 
 
 
         //3
 
-        pos3manoIzqJUEGO.x = -0.0f;
-        pos3manoIzqJUEGO.y = 0.0f;
+        pos3manoIzqJUEGO.x = 174f;
+        pos3manoIzqJUEGO.y = -100.0f;
         pos3manoIzqJUEGO.z = 1.836f;
-        pos3manoDerJUEGO.x = -10.0f;
-        pos3manoDerJUEGO.y = 0.0f;
+        pos3manoDerJUEGO.x = -185f;
+        pos3manoDerJUEGO.y = -100.0f;
         pos3manoDerJUEGO.z = 1.836f;
     }
 
@@ -73,24 +78,36 @@ public class controlRopa : MonoBehaviour
     {
         if (manoDerInPosition && manoIzqInPosition)
         {
-
-
+            Debug.Log("Dos true !!");
+            Debug.Log("Antes cube iz  x"+ manoIzCube.transform.position.x + " y"+ manoIzCube.transform.position.y + " z"+ manoIzCube.transform.position.y);
+            Debug.Log("Antes cube der  x" + manoDerCube.transform.position.x + " y" + manoDerCube.transform.position.y + " z" + manoDerCube.transform.position.y);
+            Vector3 temp=manoIzCube.transform.position;
+            // temp.y = temp.y - 10.0f;
+            // manoIzCube.transform.position = temp;
+            Debug.Log("Counter "+counter);
             switch (counter)
             {
                 case 0:
-                    manoIz.transform.position = pos1manoIzqJUEGO;
-                    manoDer.transform.position = pos1manoDerJUEGO;
+                    Debug.Log("Entro a 0");
+                    manoIzCube.transform.position = pos1manoIzqJUEGO;
+                    manoDerCube.transform.position= pos1manoDerJUEGO;
+                    CajaVisual.GetComponent<MeshRenderer>().material = mat1;
                     break;
                 case 1:
-                    manoIz.transform.position = pos2manoIzqJUEGO;
-                    manoDer.transform.position = pos2manoDerJUEGO;
+                    manoIzCube.transform.position = pos2manoIzqJUEGO;
+                    manoDerCube.transform.position= pos2manoDerJUEGO;
+                    CajaVisual.GetComponent<MeshRenderer>().material = mat2;
                     break;
                 case 2:
-                    manoIz.transform.position = pos3manoIzqJUEGO;
-                    manoDer.transform.position = pos3manoDerJUEGO;
+                    manoIzCube.transform.position= pos3manoIzqJUEGO;
+                    manoDerCube.transform.position = pos3manoDerJUEGO;
+                    CajaVisual.GetComponent<MeshRenderer>().material = mat3;
                     break;
-                default: break;
+                default: Debug.Log("CACA DEFAULT"); break;
             }
+
+            Debug.Log("Despues cube iz  x" + manoIzCube.transform.position.x + " y" + manoIzCube.transform.position.y + " z" + manoIzCube.transform.position.y);
+            Debug.Log("Despues cube der  x" + manoDerCube.transform.position.x + " y" + manoDerCube.transform.position.y + " z" + manoDerCube.transform.position.y);
 
             counter++;
         }
