@@ -551,6 +551,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manoIzCube: {fileID: 262481710}
   manoDerCube: {fileID: 841851682}
+  CajaVisual: {fileID: 1302379886}
+  mat1: {fileID: 2100000, guid: 7b0d49b7836b9f94596836ec5ecf8044, type: 2}
+  mat2: {fileID: 2100000, guid: 3b3a2ad865dc18f428b6a0d27b351e8a, type: 2}
+  mat3: {fileID: 2100000, guid: 5655dc3e5e85f0f4bb87f55aa6395e13, type: 2}
 --- !u!4 &767165879
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1047,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b70fc8a31cd27bb4bbba27aa41a80fea, type: 2}
+  - {fileID: 2100000, guid: 8a923c2edf8d45f43b2e1ff3235d19ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
