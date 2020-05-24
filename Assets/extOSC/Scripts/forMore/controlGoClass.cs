@@ -10,8 +10,9 @@ public class controlGoClass : MonoBehaviour
     public GameObject manoIzCubeDown;
     public GameObject manoDerCubeDown;
     public GameObject player;
-
     public float counter = 0;   //0 a 10 acumulas cajas cuando esta en maximo avanzas, con el tiempo baja
+
+    private Vector3 move;
     // Start is called before the first frame update
     void Awake()
     {
@@ -31,6 +32,7 @@ public class controlGoClass : MonoBehaviour
     }
     void isMoving() {
         //move player
-        player.transform.position += Vector4(0, 0, 1);
+        move = new Vector3(0, 0, 1);
+        player.transform.Translate(move);
     }
 }
