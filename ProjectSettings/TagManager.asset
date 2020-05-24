@@ -13,6 +13,8 @@ TagManager:
   - BrazoDerCube
   - manoIz
   - manoDer
+  - BrazoIzqCubeDown
+  - BrazoDerCubeDown
   layers:
   - Default
   - TransparentFX

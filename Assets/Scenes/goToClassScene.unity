@@ -331,6 +331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7406409083564831086, guid: c74a87a2cfd3b764ead444a5382c3056,
+        type: 3}
+      propertyPath: m_TagString
+      value: BrazoIzqCube
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6433533999221683010, guid: c74a87a2cfd3b764ead444a5382c3056, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c74a87a2cfd3b764ead444a5382c3056, type: 3}
@@ -480,6 +485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7406409083564831086, guid: c74a87a2cfd3b764ead444a5382c3056,
+        type: 3}
+      propertyPath: m_TagString
+      value: BrazoDerCube
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6433533999221683010, guid: c74a87a2cfd3b764ead444a5382c3056, type: 3}
@@ -1441,6 +1451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pickup (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7406409083564831086, guid: c74a87a2cfd3b764ead444a5382c3056,
+        type: 3}
+      propertyPath: m_TagString
+      value: BrazoIzqCubeDown
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6433533999221683010, guid: c74a87a2cfd3b764ead444a5382c3056, type: 3}
@@ -3254,6 +3269,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7406409083564831086, guid: c74a87a2cfd3b764ead444a5382c3056,
+        type: 3}
+      propertyPath: m_TagString
+      value: BrazoDerCubeDown
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6433533999221683010, guid: c74a87a2cfd3b764ead444a5382c3056, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c74a87a2cfd3b764ead444a5382c3056, type: 3}
@@ -4282,6 +4302,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080999662680678525, guid: ab81045b3c2349642a96ea228ced1405,
+        type: 3}
+      propertyPath: m_TagString
+      value: manoIz
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080999662977374297, guid: ab81045b3c2349642a96ea228ced1405,
+        type: 3}
+      propertyPath: m_TagString
+      value: manoDer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab81045b3c2349642a96ea228ced1405, type: 3}
