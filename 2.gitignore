@@ -10,14 +10,6 @@
 
 # Visual Studio cache directory
 .vs/
-.vscode/
-.idea/
-
-#other directory
-Plugins/
-VSCode/
-.ProjectSettings/
-
 
 # Gradle cache directory
 .gradle/
@@ -54,10 +46,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-ProjectSettings/ProjectVersion.txt
-ProjectSettings/ProjectVersion.txt
-Assets/Pluggins.meta
-Assets/VSCode.meta
-ProjectSettings/ProjectVersion.txt
-Assets/VSCode.meta
-Assets/Plugins.meta
