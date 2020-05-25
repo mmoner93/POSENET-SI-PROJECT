@@ -15,6 +15,10 @@ TagManager:
   - manoDer
   - BrazoIzqCubeDown
   - BrazoDerCubeDown
+  - PiernaIzqCube
+  - PiernaDerCube
+  - pieIz
+  - pieDer
   layers:
   - Default
   - TransparentFX
