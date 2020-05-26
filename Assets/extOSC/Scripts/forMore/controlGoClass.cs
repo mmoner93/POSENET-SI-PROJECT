@@ -22,17 +22,21 @@ public class controlGoClass : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (counter >= 9) {
+        if (counter >= 5) {
             isMoving();
+            Debug.Log("move");
         }
         counter -= Time.deltaTime;
         if (counter < 0) {
             counter = 0;
         }
+        if (counter > 7) {
+            counter = 7;
+        }
     }
     void isMoving() {
         //move player
-        move = new Vector3(0, 0, 1);
+        move = new Vector3(0, 0, 10);
         player.transform.Translate(move);
     }
 }

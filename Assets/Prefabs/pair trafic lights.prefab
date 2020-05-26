@@ -69,6 +69,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: traffic_light
       objectReference: {fileID: 0}
+    - target: {fileID: 104544, guid: dded3d0215041ea4b9149cb13a6d67a7, type: 3}
+      propertyPath: m_TagString
+      value: trafic_light
+      objectReference: {fileID: 0}
     - target: {fileID: 414872, guid: dded3d0215041ea4b9149cb13a6d67a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -52.27951
@@ -149,6 +153,10 @@ PrefabInstance:
     - target: {fileID: 104544, guid: dded3d0215041ea4b9149cb13a6d67a7, type: 3}
       propertyPath: m_Name
       value: traffic_light (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 104544, guid: dded3d0215041ea4b9149cb13a6d67a7, type: 3}
+      propertyPath: m_TagString
+      value: trafic_light
       objectReference: {fileID: 0}
     - target: {fileID: 414872, guid: dded3d0215041ea4b9149cb13a6d67a7, type: 3}
       propertyPath: m_LocalPosition.x

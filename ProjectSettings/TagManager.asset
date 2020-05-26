@@ -19,6 +19,7 @@ TagManager:
   - PiernaDerCube
   - pieIz
   - pieDer
+  - trafic_light
   layers:
   - Default
   - TransparentFX
