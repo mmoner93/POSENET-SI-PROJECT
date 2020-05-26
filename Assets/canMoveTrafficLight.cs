@@ -18,11 +18,11 @@ public class canMoveTrafficLight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("tracking") && controlGoClass.instanceGoClass.trafic == 1)
+       /* if (other.gameObject.CompareTag("tracking") && controlGoClass.instanceGoClass.trafic == 1)
         {
             controlGoClass.instanceGoClass.counter = 0;
         }
         else if (other.gameObject.CompareTag("tracking") && controlGoClass.instanceGoClass.trafic == 0) { 
-        }
+        }*/
     }
 }
