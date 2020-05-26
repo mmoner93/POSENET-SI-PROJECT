@@ -121,6 +121,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &25869994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f138667780193b845b4abae8153b4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 1857902552}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25869995}
+  m_Layer: 0
+  m_Name: escena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &25869995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f138667780193b845b4abae8153b4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 1857902552}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25869994}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -1493, y: -380, z: 336}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &61713231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,5 +2488,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nose: {fileID: 761990083}
-  wristR: {fileID: 169564930}
-  wristL: {fileID: 1607226495}
+  leftShoulder: {fileID: 0}
+  rightShoulder: {fileID: 0}
+  leftElbow: {fileID: 0}
+  rightElbow: {fileID: 0}
+  leftWrist: {fileID: 0}
+  rightWrist: {fileID: 0}
+  leftHip: {fileID: 0}
+  rightHip: {fileID: 0}
+  leftKnee: {fileID: 0}
+  rightKnee: {fileID: 0}
+  leftAnkle: {fileID: 0}
+  rightAnkle: {fileID: 0}
+  lineRenderOn: 0
