@@ -15,11 +15,14 @@ TagManager:
   - manoDer
   - BrazoIzqCubeDown
   - BrazoDerCubeDown
+<<<<<<< HEAD
   - PiernaIzqCube
   - PiernaDerCube
   - pieIz
   - pieDer
   - trafic_light
+=======
+>>>>>>> parent of 9b4aef8... Pilla ya piernas en ropa
   layers:
   - Default
   - TransparentFX
