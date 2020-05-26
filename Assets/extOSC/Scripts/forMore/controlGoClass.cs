@@ -12,9 +12,10 @@ public class controlGoClass : MonoBehaviour
     public GameObject player;
     public float counter = 0;   //0 a 10 acumulas cajas cuando esta en maximo avanzas, con el tiempo baja
     public int direction = 0;
+    public bool isred = false;
 
     private Vector3 move;
-    private bool isred = true;
+    
     // Start is called before the first frame update
     void Awake()
     {
