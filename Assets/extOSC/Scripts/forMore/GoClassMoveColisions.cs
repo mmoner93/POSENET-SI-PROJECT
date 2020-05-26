@@ -8,7 +8,6 @@ public class GoClassMoveColisions : MonoBehaviour
     public GameObject ID;
     public GameObject DU;
     public GameObject DD;
-    private Collider m_Collider;
     // Start is called before the first frame update
     void Start()
     {
