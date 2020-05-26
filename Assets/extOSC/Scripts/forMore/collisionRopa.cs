@@ -35,19 +35,6 @@ public class collisionRopa : MonoBehaviour
         //    Debug.Log("mano derecha true");
         }
 
-        if (other.gameObject.CompareTag("pieDer") && CompareTag("PiernaDerCube"))
-        {
-            controlRopa.instance.setPiernaDerPosition(true);
-            // Debug.Log("mano derecha false");
-
-        }
-        if (other.gameObject.CompareTag("pieIz") && CompareTag("PiernaIzqCube"))
-        {
-            controlRopa.instance.setPiernaIzqPosition(true);
-            // Debug.Log("mano derecha false");
-
-        }
-
         //Debug.Log("Estoy fuera con tag " + other.gameObject.tag);
 
 
@@ -71,21 +58,6 @@ public class collisionRopa : MonoBehaviour
            // Debug.Log("mano derecha false");
 
         }
-
-        if (other.gameObject.CompareTag("pieDer") && CompareTag("PiernaDerCube"))
-        {
-            controlRopa.instance.setPiernaDerPosition(false);
-            // Debug.Log("mano derecha false");
-
-        }
-        if (other.gameObject.CompareTag("pieIz") && CompareTag("PiernaIzqCube"))
-        {
-            controlRopa.instance.setPiernaIzqPosition(false);
-            // Debug.Log("mano derecha false");
-
-        }
-
-
 
     }
 

@@ -8,16 +8,12 @@ public class controlRopa : MonoBehaviour
     private int counter = 0;
     public GameObject manoIzCube;
     public GameObject manoDerCube;
-    public GameObject piernaDerCube;
-    public GameObject piernaIzCube;
     public GameObject CajaVisual;
     public Material mat1;
     public Material mat2;
     public Material mat3;
     private bool manoIzqInPosition;
     private bool manoDerInPosition;
-    private bool piernaIzqInPosition;
-    private bool piernaDerInPosition;
 
     Vector3 pos1manoIzqJUEGO;
     Vector3 pos1manoDerJUEGO;
@@ -33,8 +29,6 @@ public class controlRopa : MonoBehaviour
         instance = this;
         manoIzqInPosition = false;
         manoDerInPosition = false;
-        piernaIzqInPosition = false;
-        piernaDerInPosition = false;
         crearSitio();
         counter = 0;
     }
@@ -82,7 +76,7 @@ public class controlRopa : MonoBehaviour
 
     void check()
     {
-        if (manoDerInPosition && manoIzqInPosition & piernaIzqInPosition & piernaDerInPosition)
+        if (manoDerInPosition && manoIzqInPosition)
         {
             Debug.Log("Dos true !!");
             Debug.Log("Antes cube iz  x"+ manoIzCube.transform.position.x + " y"+ manoIzCube.transform.position.y + " z"+ manoIzCube.transform.position.y);
@@ -132,15 +126,4 @@ public class controlRopa : MonoBehaviour
     {
         manoDerInPosition = cual;
     }
-
-
-    public void setPiernaDerPosition(bool cual)
-    {
-        piernaDerInPosition = cual;
-    }
-    public void setPiernaIzqPosition(bool cual)
-    {
-        piernaIzqInPosition = cual;
-    }
-
 }
