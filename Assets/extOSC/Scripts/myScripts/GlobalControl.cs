@@ -6,6 +6,7 @@ public class GlobalControl : MonoBehaviour
 {
     public static GlobalControl Instance;
     public int now;
+    public bool tirar;
 
     void Awake()
     {

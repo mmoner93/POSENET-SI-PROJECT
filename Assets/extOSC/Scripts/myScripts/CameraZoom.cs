@@ -30,24 +30,30 @@ public class CameraZoom : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        time += Time.deltaTime;
-  
-        if (time < 4){
-            this.gameObject.transform.Translate(0, time / 4, time);
-        }
-        else{
-            if (count == 0){
-                GlobalControl.Instance.now ++;
-                SceneManager.LoadScene("RoutinePut"); // 1
-            }
-            else if (count == 1){
-                GlobalControl.Instance.now++;
-                SceneManager.LoadScene("cleanTeethScene"); // 2
-            }
-            else if (count == 2){
 
-                GlobalControl.Instance.now++;
-                SceneManager.LoadScene("goToClassScene"); // 3
+        if (!GlobalControl.Instance.tirar) {
+            time += Time.deltaTime;
+
+            if (time < 4) {
+                this.gameObject.transform.Translate(0, time / 4, time);
+            }
+            else {
+                if (count == 0) {
+                    GlobalControl.Instance.now++;
+                    GlobalControl.Instance.tirar = true;
+                    SceneManager.LoadScene("RoutinePut"); // 1
+                }
+                else if (count == 1) {
+                    GlobalControl.Instance.now++;
+                    GlobalControl.Instance.tirar = true;
+                    SceneManager.LoadScene("cleanTeethScene"); // 2
+                }
+                else if (count == 2) {
+
+                    GlobalControl.Instance.now++;
+                    GlobalControl.Instance.tirar = true;
+                    SceneManager.LoadScene("goToClassScene"); // 3
+                }
             }
         }
     }
