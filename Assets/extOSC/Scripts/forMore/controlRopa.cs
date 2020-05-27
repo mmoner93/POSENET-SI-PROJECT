@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class controlRopa : MonoBehaviour
 {
     public static controlRopa instance;
@@ -108,6 +108,10 @@ public class controlRopa : MonoBehaviour
                     manoIzCube.transform.position= pos3manoIzqJUEGO;
                     manoDerCube.transform.position = pos3manoDerJUEGO;
                     CajaVisual.GetComponent<MeshRenderer>().material = mat3;
+                    break;
+
+                case 3:
+                    SceneManager.LoadScene("GameSelector"); // 1
                     break;
                 default: Debug.Log("CACA DEFAULT"); break;
             }

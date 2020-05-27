@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class toothBrush : MonoBehaviour
 {
 
     enum action_brush {UP,DOWN,LEFT,RIGHT };
-
+    public GameObject burbujas;
+    public GameObject burbujas2;
     action_brush making_x= action_brush.UP;
     action_brush making_y = action_brush.LEFT;
     bool im_in = false;
@@ -38,6 +40,16 @@ public class toothBrush : MonoBehaviour
             im_in = true;
             axis_x= GetComponentInParent<Transform>().position.x;
             axis_y = GetComponentInParent<Transform>().position.y;
+            int decision=Random.Range(0, 1);
+
+            if (decision == 0)
+            {
+                burbujas2.SetActive(true);
+            }
+            else {
+                burbujas.SetActive(true);
+            }
+            
         }
 
     }
@@ -49,6 +61,8 @@ public class toothBrush : MonoBehaviour
         {
 
             im_in = false;
+            burbujas.SetActive(false);
+            burbujas2.SetActive(false);
         }
 
     }
@@ -101,6 +115,7 @@ public class toothBrush : MonoBehaviour
             counterText.text = "0 %";
         } else if (total >100.0) {
             counterText.text = "Limpios !";
+            SceneManager.LoadScene("GameSelector"); // 1
         }
         else
         {
