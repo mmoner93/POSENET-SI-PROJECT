@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RoutineSelector.unity
     guid: a69b3b942f34f5948b7dfc721208ef5e
   - enabled: 1
@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cleanTeethScene.unity
     guid: d3aae1ea73e8b8942aeb15d8bbbb3643
+  - enabled: 1
+    path: Assets/Scenes/GameSelector.unity
+    guid: 3258c1eeaa6ab4344ace9910c458be9d
+  - enabled: 1
+    path: Assets/Scenes/RoutinePut.unity
+    guid: bacc990eabb3113448dd5e5d8390c5f6
   m_configObjects: {}

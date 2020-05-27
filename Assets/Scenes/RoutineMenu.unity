@@ -2520,5 +2520,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nose: {fileID: 761990083}
-  wristR: {fileID: 169564930}
-  wristL: {fileID: 1607226495}
+  leftShoulder: {fileID: 0}
+  rightShoulder: {fileID: 0}
+  leftElbow: {fileID: 0}
+  rightElbow: {fileID: 0}
+  leftWrist: {fileID: 0}
+  rightWrist: {fileID: 0}
+  leftHip: {fileID: 0}
+  rightHip: {fileID: 0}
+  leftKnee: {fileID: 0}
+  rightKnee: {fileID: 0}
+  leftAnkle: {fileID: 0}
+  rightAnkle: {fileID: 0}
+  lineRenderOn: 0

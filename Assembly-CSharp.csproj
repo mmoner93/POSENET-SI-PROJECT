@@ -239,7 +239,9 @@
     <Compile Include="Assets\extOSC\Scripts\forMore\pickUpMove.cs" />
     <Compile Include="Assets\extOSC\Scripts\forMore\spehereScript.cs" />
     <Compile Include="Assets\extOSC\Scripts\forMore\toothBrush.cs" />
+    <Compile Include="Assets\extOSC\Scripts\myScripts\CameraZoom.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\Colector.cs" />
+    <Compile Include="Assets\extOSC\Scripts\myScripts\GlobalControl.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\Manager.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\Rotator.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\QuitButton.cs" />
