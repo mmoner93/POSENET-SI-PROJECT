@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class rotateplayer : MonoBehaviour
+public class finish : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,10 +16,10 @@ public class rotateplayer : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        //player.gameObject.transform.Rotate(0, 90, 0);
-        controlGoClass.instanceGoClass.direction += 1;
-        this.gameObject.SetActive(false);
+        SceneManager.LoadScene("GameSelector"); // 1
     }
+
 }
