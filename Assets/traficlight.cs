@@ -18,6 +18,11 @@ public class traficlight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Soy el object in " + other.gameObject.tag.ToString());
+        Debug.Log("Soy con el que he col in " + tag.ToString());
+        Debug.Log("traffic light");
         controlGoClass.instanceGoClass.counter = 0;
+        controlGoClass.instanceGoClass.isred = true;
+        this.gameObject.SetActive(false);
     }
 }

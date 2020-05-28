@@ -21,8 +21,8 @@ public class GoClassMoveColisions : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Soy el object in "+ other.gameObject.tag.ToString());
-        Debug.Log("Soy con el que he col in " + tag.ToString());
+        //Debug.Log("Soy el object in "+ other.gameObject.tag.ToString());
+        //Debug.Log("Soy con el que he col in " + tag.ToString());
         //Debug.Log("colision");
         if (other.gameObject.CompareTag("manoIz") && CompareTag("BrazoIzqCube"))
         {
@@ -30,7 +30,7 @@ public class GoClassMoveColisions : MonoBehaviour
             ID.SetActive(true);
 
             controlGoClass.instanceGoClass.counter += 1;
-            Debug.Log("IU");
+            //Debug.Log("IU");
         }
         if (other.gameObject.CompareTag("manoDer") && CompareTag("BrazoDerCube"))
         {
@@ -38,7 +38,7 @@ public class GoClassMoveColisions : MonoBehaviour
             DD.SetActive(true);
             
             controlGoClass.instanceGoClass.counter += 1;
-            Debug.Log("DU");
+            //Debug.Log("DU");
         }
         if (other.gameObject.CompareTag("manoIz") && CompareTag("BrazoIzqCubeDown"))
         {
@@ -46,7 +46,7 @@ public class GoClassMoveColisions : MonoBehaviour
             IU.SetActive(true);
             
             controlGoClass.instanceGoClass.counter += 1;
-            Debug.Log("ID");
+            //Debug.Log("ID");
         }
         if (other.gameObject.CompareTag("manoDer") && CompareTag("BrazoDerCubeDown"))
         {
@@ -54,7 +54,7 @@ public class GoClassMoveColisions : MonoBehaviour
             DU.SetActive(true);
            
             controlGoClass.instanceGoClass.counter += 1;
-            Debug.Log("DD");
+            //Debug.Log("DD");
         }
 
     }
