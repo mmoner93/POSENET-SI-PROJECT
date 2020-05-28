@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collision : MonoBehaviour
+public class CollisionDani : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -38,6 +38,7 @@ public class Collision : MonoBehaviour
         if (other.gameObject.CompareTag("Basura") && control == true)
         {
             Debug.Log("Estoy entrando en basura");
+            GlobalControl.Instance.tirar = false;
             whatPick.SetActive(false);
             whatPick = null;
             control = false;

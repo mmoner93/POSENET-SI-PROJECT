@@ -230,6 +230,7 @@
     <Compile Include="Assets\extOSC\Scripts\UI\OSCRotary.cs" />
     <Compile Include="Assets\extOSC\Scripts\UI\OSCSlider.cs" />
     <Compile Include="Assets\extOSC\Scripts\forMore\Collision.cs" />
+    <Compile Include="Assets\extOSC\Scripts\forMore\CollisionDani.cs" />
     <Compile Include="Assets\extOSC\Scripts\forMore\GoClassMoveColisions.cs" />
     <Compile Include="Assets\extOSC\Scripts\forMore\Rotate.cs" />
     <Compile Include="Assets\extOSC\Scripts\forMore\collisionRopa.cs" />
@@ -248,6 +249,7 @@
     <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\goToClassscene.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\goToRoutineSelector.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\gotocleanTeethScene.cs" />
+    <Compile Include="Assets\finish.cs" />
     <Compile Include="Assets\rotateplayer.cs" />
     <Compile Include="Assets\traficlight.cs" />
     <None Include="Assets\Bed &amp; Bath Furniture Pack\Documentation.txt" />
