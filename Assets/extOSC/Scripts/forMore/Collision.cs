@@ -38,6 +38,7 @@ public class Collision : MonoBehaviour
         if (other.gameObject.CompareTag("Basura") && control == true)
         {
             Debug.Log("Estoy entrando en basura");
+            GlobalControl.Instance.tirar = false;
             whatPick.SetActive(false);
             whatPick = null;
             control = false;
