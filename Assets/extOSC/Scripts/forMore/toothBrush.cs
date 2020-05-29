@@ -16,9 +16,9 @@ public class toothBrush : MonoBehaviour
     float axis_x = 0.0f;
     float axis_y = 0.0f;
     public float ponderation_time=1.0f;
-
+    bool tengoQueContar = false;
     public Text counterText;
-
+    public float tiempo = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +30,9 @@ public class toothBrush : MonoBehaviour
     {
         reloadFinish();
         changeText();
+        if (tengoQueContar) {
+            contarParaIrme();
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -107,6 +110,14 @@ public class toothBrush : MonoBehaviour
 
     }
 
+    void contarParaIrme()
+    {
+        tiempo += Time.deltaTime;
+        if (tiempo >= 3.0f)
+        {
+            SceneManager.LoadScene("GameSelector"); // 1
+        }
+    }
 
     void changeText() {
 
@@ -115,7 +126,7 @@ public class toothBrush : MonoBehaviour
             counterText.text = "0 %";
         } else if (total >100.0) {
             counterText.text = "Limpios !";
-            SceneManager.LoadScene("GameSelector"); // 1
+            tengoQueContar = true;
         }
         else
         {
