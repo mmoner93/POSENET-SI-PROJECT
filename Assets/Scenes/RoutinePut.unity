@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 744750756}
   - component: {fileID: 744750755}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: pantalon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -894,9 +894,15 @@ MonoBehaviour:
   piernaDerCube: {fileID: 556429227}
   piernaIzCube: {fileID: 765572067}
   CajaVisual: {fileID: 1302379886}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
+  camiseta: {fileID: 1064659771}
+  pantalon: {fileID: 744750753}
+  zapatos: {fileID: 1554144380}
+  mat1: {fileID: 2100000, guid: 38eaa2118f4819141ae12f4b7433a8f5, type: 2}
+  mat2: {fileID: 2100000, guid: 6a6693a7b2176084085e83b1128872f0, type: 2}
+  mat3: {fileID: 2100000, guid: cab1c6b28b6a3f4449a08469f2e620d8, type: 2}
+  camisetaOn: {fileID: 2100000, guid: fb150e021dd995e4fb5a485f390e546f, type: 2}
+  pantalonOn: {fileID: 2100000, guid: 583388fbe03d64a41a8d242fb60c68eb, type: 2}
+  zapatoOn: {fileID: 2100000, guid: f5eeaa0af5576f144b3485d66f0f057d, type: 2}
 --- !u!4 &767165879
 Transform:
   m_ObjectHideFlags: 0
@@ -1182,7 +1188,7 @@ GameObject:
   - component: {fileID: 1064659774}
   - component: {fileID: 1064659773}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: camiseta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1594,7 +1600,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7b0d49b7836b9f94596836ec5ecf8044, type: 2}
+  - {fileID: 2100000, guid: cab1c6b28b6a3f4449a08469f2e620d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1650,7 +1656,7 @@ GameObject:
   - component: {fileID: 1554144383}
   - component: {fileID: 1554144382}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: zapato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
