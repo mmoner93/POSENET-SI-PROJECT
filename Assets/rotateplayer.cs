@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using UnityEngine;
 
 public class rotateplayer : MonoBehaviour
 {
+    public GameObject town;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +20,8 @@ public class rotateplayer : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        //player.gameObject.transform.Rotate(0, 90, 0);
+        town.gameObject.transform.Rotate(0, 90, 0, Space.World);
+        town.gameObject.transform.position = new Vector3(14396, -257 , -11493);
         controlGoClass.instanceGoClass.direction += 1;
         this.gameObject.SetActive(false);
     }
