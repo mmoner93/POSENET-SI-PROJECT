@@ -23,6 +23,7 @@ public class toothBrush : MonoBehaviour
     void Start()
     {
         total = 0.0f;
+        GlobalControl.Instance.musica.Play();
     }
 
     // Update is called once per frame
