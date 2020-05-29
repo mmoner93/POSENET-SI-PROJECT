@@ -21,6 +21,8 @@ TagManager:
   - pieDer
   - trafic_light
   - tracking
+  - rutina1
+  - exit
   layers:
   - Default
   - TransparentFX

@@ -245,10 +245,7 @@
     <Compile Include="Assets\extOSC\Scripts\myScripts\GlobalControl.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\Manager.cs" />
     <Compile Include="Assets\extOSC\Scripts\myScripts\Rotator.cs" />
-    <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\QuitButton.cs" />
-    <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\goToClassscene.cs" />
-    <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\goToRoutineSelector.cs" />
-    <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\gotocleanTeethScene.cs" />
+    <Compile Include="Assets\extOSC\Scripts\myScripts\routinemenu\MenuController.cs" />
     <Compile Include="Assets\finish.cs" />
     <Compile Include="Assets\rotateplayer.cs" />
     <Compile Include="Assets\traficlight.cs" />
