@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RoutineSelector.unity
     guid: a69b3b942f34f5948b7dfc721208ef5e
   - enabled: 1
-    path: Assets/Scenes/RoutineMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 182ba5a8feecb9b43b149b097757c12e
   - enabled: 1
     path: Assets/Scenes/goToClassScene.unity
