@@ -57,6 +57,7 @@ public class controlRopa : MonoBehaviour
     void Awake()
     {
         instance = this;
+        GlobalControl.Instance.musica.Play();
         manoIzqInPosition = false;
         manoDerInPosition = false;
         piernaIzqInPosition = false;
