@@ -10,6 +10,11 @@ public class controlGoClass : MonoBehaviour
     public GameObject manoIzCubeDown;
     public GameObject manoDerCubeDown;
     public GameObject player;
+    public GameObject light;
+    public Material red;
+    public Material green;
+    public Material black;
+    public Material ambar;
     public float counter = 0;   //0 a 10 acumulas cajas cuando esta en maximo avanzas, con el tiempo baja
     public int direction = 0;
     public bool isred = false;
@@ -18,10 +23,13 @@ public class controlGoClass : MonoBehaviour
     private Vector3 move1 = new Vector3(-10, 0, 0);
     private Vector3 move2 = new Vector3(0, 0, 10);
 
+    private MeshRenderer lightr1;
+
     // Start is called before the first frame update
     void Start()
     {
         isred = false;
+        lightr1 = light.gameObject.GetComponent<MeshRenderer>();
     }
     void Awake()
     {
@@ -50,6 +58,31 @@ public class controlGoClass : MonoBehaviour
             if (counter < -10)
             {
                 isred = false;
+                Material[] mymaterials = lightr1.materials;
+                //mymaterials[0] = green;
+                mymaterials[1] = black;
+                mymaterials[2] = black;
+                mymaterials[3] = green;
+                lightr1.materials = mymaterials;
+            }
+            else if (counter < -8) {
+                Material[] mymaterials = lightr1.materials;
+                //mymaterials[0] = green;
+                mymaterials[1] = black;
+                mymaterials[2] = ambar;
+                mymaterials[3] = black;
+                lightr1.materials = mymaterials;
+
+            }
+            else if (counter < -2)
+            {
+                Material[] mymaterials = lightr1.materials;
+                //mymaterials[0] = green;
+                mymaterials[1] = red;
+                mymaterials[2] = black;
+                mymaterials[3] = black;
+                lightr1.materials = mymaterials;
+
             }
         }            
         if (counter > 7) {
