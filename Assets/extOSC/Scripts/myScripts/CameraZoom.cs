@@ -100,20 +100,19 @@ public class CameraZoom : MonoBehaviour
                 if (count == 0) {
                     GlobalControl.Instance.now++;
                     GlobalControl.Instance.tirar = true;
-                    SceneManager.LoadScene("GameSelector"); // 1 ///RoutinePut
+                    SceneManager.LoadScene("RoutinePut"); // 1 ///RoutinePut
                 }
                 else if (count == 1) {
                     GlobalControl.Instance.now++;
                     GlobalControl.Instance.tirar = true;
-                    SceneManager.LoadScene("GameSelector"); // 2 ///cleanTeethScene
+                    SceneManager.LoadScene("cleanTeethScene"); // 2 ///cleanTeethScene
                 }
                 else if (count == 2) {
                     GlobalControl.Instance.now++;
                     GlobalControl.Instance.tirar = true;
-                    SceneManager.LoadScene("GameSelector"); // 3 ///goToClassScene
+                    SceneManager.LoadScene("goToClassScene"); // 3 ///goToClassScene//GameSelector
                 }
-                else 
-                {
+                else {
                     GlobalControl.Instance.now++;
                     GlobalControl.Instance.tirar = true;
                     SceneManager.LoadScene("RoutineMenu"); // 3 ///goToClassScene
