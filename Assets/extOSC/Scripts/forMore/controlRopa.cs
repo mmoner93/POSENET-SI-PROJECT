@@ -11,9 +11,20 @@ public class controlRopa : MonoBehaviour
     public GameObject piernaDerCube;
     public GameObject piernaIzCube;
     public GameObject CajaVisual;
+
+    public GameObject camiseta;
+    public GameObject pantalon;
+    public GameObject zapatos;
+
     public Material mat1;
     public Material mat2;
     public Material mat3;
+
+
+    public Material camisetaOn;
+    public Material pantalonOn;
+    public Material zapatoOn;
+
     private bool manoIzqInPosition;
     private bool manoDerInPosition;
     private bool piernaIzqInPosition;
@@ -21,11 +32,20 @@ public class controlRopa : MonoBehaviour
 
     Vector3 pos1manoIzqJUEGO;
     Vector3 pos1manoDerJUEGO;
+    Vector3 pos1piernaIzqJUEGO;
+    Vector3 pos1piernaDerJUEGO;
+
+
     Vector3 pos2manoIzqJUEGO;
     Vector3 pos2manoDerJUEGO;
+    Vector3 pos2piernaIzqJUEGO;
+    Vector3 pos2piernaDerJUEGO;
+
+
     Vector3 pos3manoIzqJUEGO;
     Vector3 pos3manoDerJUEGO;
-
+    Vector3 pos3piernaIzqJUEGO;
+    Vector3 pos3piernaDerJUEGO;
 
     // Start is called before the first frame update
     void Awake()
@@ -37,40 +57,75 @@ public class controlRopa : MonoBehaviour
         piernaDerInPosition = false;
         crearSitio();
         counter = 0;
+
+        manoIzCube.transform.position = pos1manoIzqJUEGO;
+        manoDerCube.transform.position = pos1manoDerJUEGO;
+        CajaVisual.GetComponent<MeshRenderer>().material = mat1;
+
     }
     
 
 
     void crearSitio()
     {
-        //1
+        //1--------------------------------
         pos1manoIzqJUEGO.x = 174f;
         pos1manoIzqJUEGO.y = -0.0f;
         pos1manoIzqJUEGO.z = 1.836f;
+
         pos1manoDerJUEGO.x = -185f;
         pos1manoDerJUEGO.y = 0.0f;
         pos1manoDerJUEGO.z = 1.836f;
 
 
-        //2
+
+        pos1piernaIzqJUEGO.x=-110f;
+        pos1piernaIzqJUEGO.y = -249.0f;
+        pos1piernaIzqJUEGO.z = 1.836f;
+        pos1piernaDerJUEGO.x = 115.0f;
+        pos1piernaDerJUEGO.y = -270.0f;
+        pos1piernaDerJUEGO.z = 1.836f;
+
+        
+
+        //2--------------------------------------
 
         pos2manoIzqJUEGO.x = 174f;
         pos2manoIzqJUEGO.y = -60.0f;
         pos2manoIzqJUEGO.z = 1.836f;
+
         pos2manoDerJUEGO.x = -185f;
         pos2manoDerJUEGO.y = -60.0f;
         pos2manoDerJUEGO.z = 1.836f;
 
+        pos2piernaIzqJUEGO.x =-110f;
+        pos2piernaIzqJUEGO.y  = -249.0f;
+        pos2piernaIzqJUEGO.z  = 1.836f;
 
+        pos2piernaDerJUEGO.x  = 115.0f;
+        pos2piernaDerJUEGO.y  = -270.0f;
+        pos2piernaDerJUEGO.z = 1.836f;
 
-        //3
+        //3----------------------------------------
 
         pos3manoIzqJUEGO.x = 174f;
         pos3manoIzqJUEGO.y = -100.0f;
         pos3manoIzqJUEGO.z = 1.836f;
+
         pos3manoDerJUEGO.x = -185f;
         pos3manoDerJUEGO.y = -100.0f;
         pos3manoDerJUEGO.z = 1.836f;
+
+
+        pos3piernaIzqJUEGO.x =-110f;
+        pos3piernaIzqJUEGO.y  = -249.0f;
+        pos3piernaIzqJUEGO.z  = 1.836f;
+
+        pos3piernaDerJUEGO.x  = 115.0f;
+        pos3piernaDerJUEGO.y  = -270.0f;
+        pos3piernaDerJUEGO.z = 1.836f;
+
+
     }
 
     // Update is called once per frame
@@ -93,24 +148,27 @@ public class controlRopa : MonoBehaviour
             Debug.Log("Counter "+counter);
             switch (counter)
             {
-                case 0:
+               /* case 0:
                     Debug.Log("Entro a 0");
                     manoIzCube.transform.position = pos1manoIzqJUEGO;
                     manoDerCube.transform.position= pos1manoDerJUEGO;
                     CajaVisual.GetComponent<MeshRenderer>().material = mat1;
-                    break;
-                case 1:
+                    break;*/
+                case 0:
+                    camiseta.GetComponent<MeshRenderer>().material = camisetaOn;
                     manoIzCube.transform.position = pos2manoIzqJUEGO;
                     manoDerCube.transform.position= pos2manoDerJUEGO;
                     CajaVisual.GetComponent<MeshRenderer>().material = mat2;
                     break;
-                case 2:
+                case 1:
+                    pantalon.GetComponent<MeshRenderer>().material = pantalonOn;
                     manoIzCube.transform.position= pos3manoIzqJUEGO;
                     manoDerCube.transform.position = pos3manoDerJUEGO;
                     CajaVisual.GetComponent<MeshRenderer>().material = mat3;
                     break;
 
-                case 3:
+                case 2:
+                    zapatos.GetComponent<MeshRenderer>().material = zapatoOn;
                     SceneManager.LoadScene("GameSelector"); // 1
                     break;
                 default: Debug.Log("CACA DEFAULT"); break;
