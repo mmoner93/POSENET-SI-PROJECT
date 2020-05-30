@@ -115,7 +115,7 @@ public class CameraZoom : MonoBehaviour
                 else {
                     GlobalControl.Instance.now++;
                     GlobalControl.Instance.tirar = true;
-                    SceneManager.LoadScene("RoutineMenu"); // 3 ///goToClassScene
+                    SceneManager.LoadScene("FinalScene"); // 3 ///goToClassScene
                 }
             }
         }

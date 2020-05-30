@@ -1075,7 +1075,7 @@ MonoBehaviour:
   Material1: {fileID: 2100000, guid: e467566b3e3980a4ea3270cb0f5de7e1, type: 2}
   Material2: {fileID: 2100000, guid: 4e52da4b726abd84b82e46ea0c78bd2a, type: 2}
   Material3: {fileID: 2100000, guid: 7b5e70b19d0352e4aa9c376ef1265dc4, type: 2}
-  Material4: {fileID: 0}
+  Material4: {fileID: 2100000, guid: ce1a422052f12474793eae9ccb2471df, type: 2}
 --- !u!1 &1013152753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7406409083564831086, guid: c74a87a2cfd3b764ead444a5382c3056,
