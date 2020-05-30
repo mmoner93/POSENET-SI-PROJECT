@@ -30,7 +30,7 @@ public class controlGoClass : MonoBehaviour
     {
         isred = false;
         lightr1 = light.gameObject.GetComponent<MeshRenderer>();
-        GlobalControl.Instance.musica.Play();
+        //GlobalControl.Instance.musica.Play();
     }
     void Awake()
     {
