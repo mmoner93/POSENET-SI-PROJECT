@@ -24,6 +24,7 @@ public class toothBrush : MonoBehaviour
     {
         total = 0.0f;
         GlobalControl.Instance.musica.Play();
+        GlobalControl.Instance.musica.loop = true;
     }
 
     // Update is called once per frame

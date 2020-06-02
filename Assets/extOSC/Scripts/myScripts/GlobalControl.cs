@@ -23,5 +23,6 @@ public class GlobalControl : MonoBehaviour
         }
 
         musica.Play();
+        musica.loop = true;
     }
 }

@@ -58,6 +58,7 @@ public class controlRopa : MonoBehaviour
     {
         instance = this;
         GlobalControl.Instance.musica.Play();
+        GlobalControl.Instance.musica.loop = true;
         manoIzqInPosition = false;
         manoDerInPosition = false;
         piernaIzqInPosition = false;
@@ -183,6 +184,10 @@ public class controlRopa : MonoBehaviour
                     piernaDerCube.transform.position = pos2piernaDerJUEGO; 
                     piernaIzCube.transform.position = pos2piernaIzqJUEGO; 
                     CajaVisual.GetComponent<MeshRenderer>().material = mat2;
+                    manoIzqInPosition = false;
+                    manoDerInPosition = false;
+                    piernaIzqInPosition = false;
+                    piernaDerInPosition = false;
                     break;
                 case 1:
                     pantalon.GetComponent<MeshRenderer>().material = pantalonOn;
@@ -191,6 +196,10 @@ public class controlRopa : MonoBehaviour
                     piernaDerCube.transform.position = pos3piernaDerJUEGO; ;
                     piernaIzCube.transform.position = pos3piernaIzqJUEGO; ;
                     CajaVisual.GetComponent<MeshRenderer>().material = mat3;
+                    manoIzqInPosition = false;
+                    manoDerInPosition = false;
+                    piernaIzqInPosition = false;
+                    piernaDerInPosition = false;
                     break;
 
                 case 2:
@@ -198,11 +207,11 @@ public class controlRopa : MonoBehaviour
                     tengoQueContar = true;
                     Tempo.text = "Muy bien !";
                     break;
-                default: Debug.Log("CACA DEFAULT"); break;
+                default: Debug.Log("No disponible"); break;
             }
 
-            Debug.Log("Despues cube iz  x" + manoIzCube.transform.position.x + " y" + manoIzCube.transform.position.y + " z" + manoIzCube.transform.position.y);
-            Debug.Log("Despues cube der  x" + manoDerCube.transform.position.x + " y" + manoDerCube.transform.position.y + " z" + manoDerCube.transform.position.y);
+            //Debug.Log("Despues cube iz  x" + manoIzCube.transform.position.x + " y" + manoIzCube.transform.position.y + " z" + manoIzCube.transform.position.y);
+            //Debug.Log("Despues cube der  x" + manoDerCube.transform.position.x + " y" + manoDerCube.transform.position.y + " z" + manoDerCube.transform.position.y);
 
             counter++;
         }
