@@ -80,60 +80,61 @@ public class controlRopa : MonoBehaviour
     void crearSitio()
     {
         //1--------------------------------
-        pos1manoIzqJUEGO.x = 157f;
-        pos1manoIzqJUEGO.y = 148f;
+        pos1manoIzqJUEGO.x = 34 + 139f;
+        pos1manoIzqJUEGO.y = 122f;
         pos1manoIzqJUEGO.z = 1.836f;
 
-        pos1manoDerJUEGO.x = -138f;
-        pos1manoDerJUEGO.y = 159f;
+        pos1manoDerJUEGO.x = 34 + -131f;
+        pos1manoDerJUEGO.y = 125f;
         pos1manoDerJUEGO.z = 1.836f;
 
 
 
-        pos1piernaIzqJUEGO.x=-49f;
-        pos1piernaIzqJUEGO.y = -270.0f;
+        pos1piernaIzqJUEGO.x = 34 + -36f;
+        pos1piernaIzqJUEGO.y = -235.0f;
         pos1piernaIzqJUEGO.z = 1.836f;
-        pos1piernaDerJUEGO.x = 57.0f;
-        pos1piernaDerJUEGO.y = -270.0f;
+
+        pos1piernaDerJUEGO.x = 34 + 51.0f;
+        pos1piernaDerJUEGO.y = -238.0f;
         pos1piernaDerJUEGO.z = 1.836f;
 
         
 
         //2--------------------------------------
 
-        pos2manoIzqJUEGO.x = 94f;
-        pos2manoIzqJUEGO.y = 144.0f;
+        pos2manoIzqJUEGO.x = 34 + 83f;
+        pos2manoIzqJUEGO.y = 106f;
         pos2manoIzqJUEGO.z = 1.836f;
 
-        pos2manoDerJUEGO.x = -79f;
-        pos2manoDerJUEGO.y = -47.0f;
+        pos2manoDerJUEGO.x = 34 + -59f;
+        pos2manoDerJUEGO.y = -70.0f;
         pos2manoDerJUEGO.z = 1.836f;
 
-        pos2piernaIzqJUEGO.x =-49f;
-        pos2piernaIzqJUEGO.y  = -270.0f;
+        pos2piernaIzqJUEGO.x  = 34 + -30f;
+        pos2piernaIzqJUEGO.y  = -235.0f;
         pos2piernaIzqJUEGO.z  = 1.836f;
                               
-        pos2piernaDerJUEGO.x = 57.0f;
-        pos2piernaDerJUEGO.y = -270.0f;
+        pos2piernaDerJUEGO.x = 34 + 51.0f;
+        pos2piernaDerJUEGO.y = -238.0f;
         pos2piernaDerJUEGO.z = 1.836f;
 
         //3----------------------------------------
 
-        pos3manoIzqJUEGO.x = 181f;
-        pos3manoIzqJUEGO.y = 8.0f;
+        pos3manoIzqJUEGO.x = 34+154f;
+        pos3manoIzqJUEGO.y = -2f;
         pos3manoIzqJUEGO.z = 1.836f;
 
-        pos3manoDerJUEGO.x = -183f;
-        pos3manoDerJUEGO.y = 14.0f;
+        pos3manoDerJUEGO.x = 34 + -173;
+        pos3manoDerJUEGO.y = 5f;
         pos3manoDerJUEGO.z = 1.836f;
 
 
-        pos3piernaIzqJUEGO.x =-124f;
-        pos3piernaIzqJUEGO.y  = -270.0f;
+        pos3piernaIzqJUEGO.x = 34 + -104.0f;
+        pos3piernaIzqJUEGO.y  =  -241.0f;
         pos3piernaIzqJUEGO.z  = 1.836f;
 
-        pos3piernaDerJUEGO.x  = 111.0f;
-        pos3piernaDerJUEGO.y  = -270.0f;
+        pos3piernaDerJUEGO.x  = 34 + 90f;
+        pos3piernaDerJUEGO.y  = -249f;
         pos3piernaDerJUEGO.z = 1.836f;
 
 
